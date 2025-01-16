@@ -32,79 +32,104 @@ body {
 }
 
 .container {
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 15px 20px 15px;
+    margin: 100px auto 20px;
 }
 
-.item {
+.car-item {
     display: flex;
-    background: white;
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.item-img {
-    width: 200px;
-    height: auto;
+.car-item .image-wrapper {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.car-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-.item-info {
-    padding: 15px;
+.car-details {
     flex: 1;
+    padding: 15px;
     display: flex;
     flex-direction: column;
+}
+
+.car-header {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.item-title {
+.car-title {
     font-size: 18px;
-    font-weight: 700;
-    color: #00457C;
-    margin: 0 0 10px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.item-details {
-    text-align: center;
+.car-subtitle {
+    font-size: 14px;
+    color: #777;
+}
+
+.car-info {
+    margin: 10px 0;
     font-size: 14px;
     color: #555;
-    margin: 5px 0;
+    line-height: 1.5;
 }
 
-.item-price {
-    font-size: 20px;
-    font-weight: 700;
-    color: #28a745;
-    margin: 10px 0;
-    text-align: end;
+.car-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.item-link {
+.status-badge {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #00457C;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s;
-    align-self: flex-start;
+    padding: 5px 10px;
+    background: #e9f5e9;
+    color: #28a745;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.item-link:hover {
-    background-color: #005a99;
+.reserve-price {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.view-sale {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.view-sale:hover {
+    text-decoration: underline;
 }
 
 .footer-container {
