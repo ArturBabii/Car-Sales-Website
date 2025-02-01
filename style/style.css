@@ -53,7 +53,7 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     max-width: calc(100% - 40px);
     background-color: #e0e0e0;
     color: #333;
@@ -137,6 +137,37 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.year {
+    display: flex;
+}
+
+.input-min {
+    width: 60px;
+}
+
+.input-max {
+    width: 60px;
+}
+
+input[type="checkbox"]:checked + .arrow-label .arrow {
+    transform: rotate(90deg);
+}
+
+.arrow {
+    transition: transform 0.5s ease;
+}
+
+.dropdown-content-button {
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+    border-color: silver;
+    border-radius: 3px;
+    margin-left: 100px;
+    margin-top: 10px;
+
 }
 
 #toggle1, #toggle2, #toggle3, #toggle4 {
