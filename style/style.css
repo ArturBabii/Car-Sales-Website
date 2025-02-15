@@ -54,7 +54,6 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   background-color: #d6d6d6;
-  margin-left: 15px;
 }
 
 .featured-filter-button {
@@ -146,6 +145,11 @@ header h1 {
   align-items: center;
 }
 
+.title-section-sidebar {
+  font-size: 19px;
+  cursor: pointer;
+}
+
 .filter-dropdown-year {
   display: flex;
 }
@@ -196,7 +200,6 @@ input[type="checkbox"]:checked + .arrow-label .arrow {
   width: 85%;
   margin-bottom: 20px;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .car-item-image-wrapper:hover {
@@ -238,15 +241,18 @@ input[type="checkbox"]:checked + .arrow-label .arrow {
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .car-subtitle {
   font-size: 14px;
   color: #777;
+  margin-top: 8px;
 }
 
 .car-info {
-  margin: 10px 0;
+  margin: 10px;
   font-size: 14px;
   color: #555;
   line-height: 1.5;
@@ -254,8 +260,8 @@ input[type="checkbox"]:checked + .arrow-label .arrow {
 
 .car-actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .car-status-badge {
