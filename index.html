@@ -7,275 +7,268 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Car Sales Website</title>
 </head>
-<body>
+  <body>
 
-  <header class="header">
-    <a href="index.html" class="logo-link">
-      <img src="image/logo.png" alt="Logo" class="logo">
-    </a>
-    <h1>Car Sales</h1>
-  </header>
+    <header>
+      <a href="index.html" class="logo-link">
+        <img src="image/logo.png" alt="Logo" class="logo">
+      </a>
+      <h1>Car Sales</h1>
+    </header>
 
-  <div class="full-width-buttons">
-    <p class="buttons-text">Featured Filters</p>
-    <button class="button">Hurricane Vehicles</button>
-    <button class="button">Buy Now</button>
-    <button class="button">Run & Drive</button>
-    <button class="button">CLear Title</button>
-    <button class="button">Auction Today</button>
-    <button class="button">Auction Tomorrow</button>
-    <button class="button">Available to Public</button>
-    <button class="button">Timed Auctions</button>
-    <button class="button">Rental Vehicles</button>
-  </div>
+    <main>
+      <div class="featured-filters-wrapper">
+        <p class="featured-filters-caption">Featured Filters</p>
+        <button class="featured-filter-button">Hurricane Vehicles</button>
+        <button class="featured-filter-button">Buy Now</button>
+        <button class="featured-filter-button">Run & Drive</button>
+        <button class="featured-filter-button">CLear Title</button>
+        <button class="featured-filter-button">Auction Today</button>
+        <button class="featured-filter-button">Auction Tomorrow</button>
+        <button class="featured-filter-button">Available to Public</button>
+        <button class="featured-filter-button">Timed Auctions</button>
+        <button class="featured-filter-button">Rental Vehicles</button>
+      </div>
+    
+      <div class="container-sidebar-wrapper">
+        <div class="sidebar">
+          <h2>Filters</h2>
+      
+          <input type="checkbox" id="toggle1">
+          <label for="toggle1" class="arrow-label">
+            <span class="title-section-sidebar">New Inventory</span> <span class="arrow">&#8594;</span>
+          </label>
+      
+          <div class="filter-dropdown">
+            <label><input type="checkbox"> All</label>
+            <label><input type="checkbox"> Last 24 Hours</label>
+            <label><input type="checkbox"> Last 48 Hours</label>
+            <label><input type="checkbox"> Last 7 Days</label>
+            <label><input type="checkbox"> Last 14 Days</label>
+          </div>
+      
+          <div class="height-10"></div>
+      
+          <input type="checkbox" id="toggle2">
+          <label for="toggle2" class="arrow-label">
+            <span class="title-section-sidebar">Year</span> <span class="arrow">&#8594;</span>
+          </label>
+      
+          <div class="filter-dropdown">
+            <div class="filter-dropdown-year">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="1900">
+              </div>
+              <div class="filter-dropdown-field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="5000">
+              </div>
+            </div>
+            <input type="range">
+            <button class="dropdown-content-button">Apply Year</button>
+          </div>
+      
+          <div class="height-10"></div>
+      
+          <input type="checkbox" id="toggle3">
+          <label for="toggle3" class="arrow-label">
+            <span class="title-section-sidebar">Vehicle Type</span> <span class="arrow">&#8594;</span>
+          </label>
+      
+          <div class="filter-dropdown">
+            <label><input type="checkbox"> Automobiles (5,577)</label>
+            <label><input type="checkbox"> Classics (39)</label>
+            <label><input type="checkbox"> Fleet Vehicles (3)</label>
+            <label><input type="checkbox"> Light Trucks (5)</label>
+          </div>
+      
+          <div class="height-10"></div>
+      
+          <input type="checkbox" id="toggle4">
+          <label for="toggle4" class="arrow-label">
+            <span class="title-section-sidebar">Vehicle SubType</span> <span class="arrow">&#8594;</span>
+          </label>
+      
+          <div class="filter-dropdown">
+            <label><input type="checkbox"> Cruiser (3)</label>
+            <label><input type="checkbox"> Enduro (31)</label>
+            <label><input type="checkbox"> Scooter (2)</label>
+            <label><input type="checkbox"> Sport (45)</label>
+            <label><input type="checkbox"> Touring (34)</label>
+            <label><input type="checkbox"> Traditional (6)</label>
+          </div>
+        </div>
+    
+        <div class="car-item-container">
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2015 BMW 328 2.0T xDrive">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2015 BMW 328 2.0T xDrive</a>
+                  <div class="car-subtitle">Stock #: 41041216</div>
+                </div>
+                <span class="car-status-badge">Run & Drive</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7FN023627
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2017 BMW 330 2.0T xDrive">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2017 BMW 330 2.0T xDrive</a>
+                  <div class="car-subtitle">Stock #: 41041216</div>
+                </div>
+                <span class="car-status-badge">Run & Drive</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7FN023627
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2020 BMW 530 2.0T">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2020 BMW 530 2.0T</a>
+                  <div class="car-subtitle">Stock #: 41041216</div>
+                </div>
+                <span class="car-status-badge">Run & Drive</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7FN023627
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2014 BMW X5 3.0 xDrive">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2014 BMW X5 3.0 xDrive</a>
+                  <div class="car-subtitle">Stock #: 41001229</div>
+                </div>
+                <span class="car-status-badge">Deployed</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7GN089449
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2014 BMW X5 3.0 xDrive">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2014 BMW X5 3.0 xDrive</a>
+                  <div class="car-subtitle">Stock #: 41001229</div>
+                </div>
+                <span class="car-status-badge">Deployed</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7GN089449
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2014 BMW X5 3.0 xDrive">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2014 BMW X5 3.0 xDrive</a>
+                  <div class="car-subtitle">Stock #: 41001229</div>
+                </div>
+                <span class="car-status-badge">Deployed</span>
+              </div>
+              <div class="car-info">
+                Salvage | Front End Collision<br>
+                112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC7GN089449
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="car-item-image-wrapper">
+            <div class="image-wrapper">
+              <img src="image/images.jpg" alt="2015 BMW 535 3.0">
+            </div>
+            <div class="car-details">
+              <div class="car-header">
+                <div>
+                  <a class="car-title">2015 BMW 535 3.0</a>
+                  <div class="car-subtitle">Stock #: 40974945</div>
+                </div>
+                <span class="car-status-badge">Stationary</span>
+              </div>
+              <div class="car-info">
+                Salvage | Left Front Collision<br>
+                153,725 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
+                VIN: WAUGAFC9FN050280
+              </div>
+              <div class="car-actions">
+                <a href="#" class="view-sale">View Sale List</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <div class="container">
-    <div class="sidebar">
-      <h2>Filters</h2>
-  
-      <input type="checkbox" id="toggle1">
-      <label for="toggle1" class="arrow-label">
-        <span>New Inventory</span> <span class="arrow">&#8594;</span>
-      </label>
-  
-      <div class="dropdown-content">
-        <label><input type="checkbox"> All</label>
-        <label><input type="checkbox"> Last 24 Hours</label>
-        <label><input type="checkbox"> Last 48 Hours</label>
-        <label><input type="checkbox"> Last 7 Days</label>
-        <label><input type="checkbox"> Last 14 Days</label>
-      </div>
-  
-      <div style="height: 10px;"></div>
-  
-      <input type="checkbox" id="toggle2">
-      <label for="toggle2" class="arrow-label">
-        <span>Year</span> <span class="arrow">&#8594;</span>
-      </label>
-  
-      <div class="dropdown-content">
-        <div class="year">
-          <div class="field">
-            <span>Min</span>
-            <input type="number" class="input-min" value="1900">
-          </div>
-          <div class="separator">-</div>
-          <div class="field">
-            <span>Max</span>
-            <input type="number" class="input-max" value="5000">
-          </div>
-        </div>
-          <div class="slider">
-              <div class="progress"></div>
-          </div>
-      </div>
-  
-      <div style="height: 10px;"></div>
-  
-      <input type="checkbox" id="toggle3">
-      <label for="toggle3" class="arrow-label">
-        <span>Vehicle Type</span> <span class="arrow">&#8594;</span>
-      </label>
-  
-      <div class="dropdown-content">
-        <label><input type="checkbox"> Automobiles (5,577)</label>
-        <label><input type="checkbox"> Classics (39)</label>
-        <label><input type="checkbox"> Fleet Vehicles (3)</label>
-        <label><input type="checkbox"> Light Trucks (5)</label>
-      </div>
-  
-      <div style="height: 10px;"></div>
-  
-      <input type="checkbox" id="toggle4">
-      <label for="toggle4" class="arrow-label">
-        <span>Vehicle SubType</span> <span class="arrow">&#8594;</span>
-      </label>
-  
-      <div class="dropdown-content">
-        <label><input type="checkbox"> Cruiser (3)</label>
-        <label><input type="checkbox"> Enduro (31)</label>
-        <label><input type="checkbox"> Scooter (2)</label>
-        <label><input type="checkbox"> Sport (45)</label>
-        <label><input type="checkbox"> Touring (34)</label>
-        <label><input type="checkbox"> Traditional (6)</label>
-      </div>
-    </div>
+    <footer>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </footer>
 
-    <div class="car-item-container">
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2015 BMW 328 2.0T xDrive</div>
-              <div class="car-subtitle">Stock #: 41041216</div>
-            </div>
-            <span class="status-badge">Run & Drive</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7FN023627
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2017 BMW 330 2.0T xDrive</div>
-              <div class="car-subtitle">Stock #: 41041216</div>
-            </div>
-            <span class="status-badge">Run & Drive</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7FN023627
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2020 BMW 530 2.0T</div>
-              <div class="car-subtitle">Stock #: 41041216</div>
-            </div>
-            <span class="status-badge">Run & Drive</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            64,688 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7FN023627
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2014 BMW X5 3.0 xDrive</div>
-              <div class="car-subtitle">Stock #: 41001229</div>
-            </div>
-            <span class="status-badge">Deployed</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7GN089449
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2014 BMW X5 3.0 xDrive</div>
-              <div class="car-subtitle">Stock #: 41001229</div>
-            </div>
-            <span class="status-badge">Deployed</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7GN089449
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2014 BMW X5 3.0 xDrive</div>
-              <div class="car-subtitle">Stock #: 41001229</div>
-            </div>
-            <span class="status-badge">Deployed</span>
-          </div>
-          <div class="car-info">
-            Salvage | Front End Collision<br>
-            112,196 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC7GN089449
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="car-item">
-        <div class="image-wrapper">
-          <img src="image/images.jpg" alt="Car Image">
-        </div>
-        <div class="car-details">
-          <div class="car-header">
-            <div>
-              <div class="car-title">2015 BMW 535 3.0</div>
-              <div class="car-subtitle">Stock #: 40974945</div>
-            </div>
-            <span class="status-badge">Stationary</span>
-          </div>
-          <div class="car-info">
-            Salvage | Left Front Collision<br>
-            153,725 mi | Gasoline | 2.0L I-4 DI, DOHC<br>
-            VIN: WAUGAFC9FN050280
-          </div>
-          <div class="car-actions">
-            <span class="reserve-price">Reserve price</span>
-            <a href="#" class="view-sale">View Sale List</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer-container">
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </footer>
-
-</body>
+  </body>
 </html>
